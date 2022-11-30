@@ -92,7 +92,7 @@ nav .right button.on div:nth-child(3) {
   top: 6px;
 }
 nav.on {
-  background: white;
+  background: rgb(255, 255, 255);
   border-bottom: 1px solid #005EB8;
 }
 nav.on .logo {
@@ -478,7 +478,7 @@ nav.on .right button div {
 
 #section5 {
   text-align: center;
-  margin-bottom: 180px;
+  padding-bottom: 200px;
 }
 #section5 h1 {
   font-family: "GmarketSansMedium";
@@ -617,15 +617,12 @@ nav.on .right button div {
     width: 100% !important;
     justify-content: center !important;
   }
-
   nav .right > div {
     display: none;
   }
-
   #section1 {
     height: auto;
   }
-
   #section2 img {
     max-width: 80%;
   }
@@ -652,11 +649,9 @@ nav.on .right button div {
     margin-bottom: 120px;
     text-align: left;
   }
-
   #section3 .layGrid {
     flex-direction: row !important;
   }
-
   #section4 {
     background: none;
     position: relative;
@@ -691,7 +686,6 @@ nav.on .right button div {
   #section4.pc {
     display: none;
   }
-
   #section5 .layGrid {
     flex-direction: row !important;
   }
@@ -709,14 +703,12 @@ nav.on .right button div {
   body .tablet {
     display: none !important;
   }
-
   nav {
     padding: 15px;
   }
   nav .logo {
     width: 100px;
   }
-
   #section1 {
     position: relative;
   }
@@ -727,7 +719,6 @@ nav.on .right button div {
   #section1 .scroll {
     display: none;
   }
-
   #section2 img {
     max-width: 40%;
     margin: 0 auto;
@@ -764,7 +755,6 @@ nav.on .right button div {
   #section2 .ion .layGrid > div:nth-child(2) {
     margin-bottom: 60px;
   }
-
   #section3 {
     margin: 80px 0;
   }
@@ -782,7 +772,6 @@ nav.on .right button div {
     -webkit-animation-play-state: running !important;
             animation-play-state: running !important;
   }
-
   #section4 {
     margin: 80px 0;
   }
@@ -795,9 +784,8 @@ nav.on .right button div {
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.8);
   }
-
   #section5 {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
   #section5 h1 {
     font-size: 20px;
@@ -815,4 +803,4 @@ nav.on .right button div {
 }
 .mySwiper {
   overflow: hidden;
-}
+}/*# sourceMappingURL=style.css.map */
