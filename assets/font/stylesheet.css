@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'NewYork';
+    src: url('NewYork.eot');
+    src: url('NewYork.eot?#iefix') format('embedded-opentype'),
+        url('NewYork.woff2') format('woff2'),
+        url('NewYork.woff') format('woff'),
+        url('NewYork.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

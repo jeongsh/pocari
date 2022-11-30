@@ -1,0 +1,116 @@
+.progress {
+    width: 260px;
+    height: 260px;
+    font-size: 30px;
+    color: #005EAC;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    margin-right:80px;
+    box-sizing: border-box;
+}
+.progress:nth-last-child(1){margin-right: 0;}
+.progress::after {
+    content: "";
+    box-sizing: border-box;
+}
+
+.progress .title {
+    position: relative;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.progress .overlay {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.progress .left,
+.progress .right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 10px solid #005EAC;
+    border-radius: 130px 0px 0px 130px;
+    border-right: 0;
+    transform-origin: right;
+    box-sizing: border-box;
+    
+}
+.progress:nth-child(odd) .left,
+.progress:nth-child(odd) .right{
+    border-color: #009DD6;
+}
+
+.progress .content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 30;
+    background: rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.progress .content img{margin-bottom: 10px;}
+.progress .content p{font-size: 16px !important; font-family: 'GmarketSansMedium';}
+.progress .content p span{font-size: 15px; color: #000; font-family: 'GmarketSansLight';}
+.progress .left {
+    animation: load1 0.5s linear forwards;
+    animation-play-state: paused;
+}
+.progress .right {
+    animation: load3 .5s linear forwards 0.5s;
+    animation-play-state: paused;
+}
+.layGrid.on .progress .left {animation-play-state: running;}
+.layGrid.on .progress .right {animation-play-state: running;}
+
+
+@keyframes load1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes load2 {
+    0% {
+        z-index: 100;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        z-index: 100;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load3 {
+    0% {
+        z-index: 100;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        z-index: 100;
+        transform: rotate(360deg);
+    }
+}
